@@ -2,7 +2,10 @@
   <div id="app"></div>
   <h1>To-do List</h1>
   <ul>
-    <li><to-do-item label="Learn Vue.js"></to-do-item></li>
+    <li>
+      <to-do-item label="Learn Vue.js1" :done="true"></to-do-item>
+      <to-do-item label="Learn Vue.js2" :done="false"></to-do-item>
+    </li>
   </ul>
 </template>
 
