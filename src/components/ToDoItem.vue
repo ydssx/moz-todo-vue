@@ -6,16 +6,15 @@
 </template>
 
 <script>
-import uniqueId from "lodash.uniqueid";
 export default {
     props: {
         label: { required: true, type: String },
         done: { type: Boolean, default: false },
+        id: { required: true, type: String },
     },
     data() {
         return {
             isDone: this.done,
-            id: uniqueId("todo-item-"),
         };
     }
 };
